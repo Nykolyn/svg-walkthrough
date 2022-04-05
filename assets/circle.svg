@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="circle" viewBox="0 0 200 200">
+    <title>circle</title>
+    <!-- <path d="M14 2v17l-4-4-4 4v-17c0-0.553 0.585-1.020 1-1h6c0.689-0.020 1 0.447 1 1z"></path> -->
+    <circle cx="100" cy="100" r="100" fill="none" stroke="black" stroke-width="2" />
+  </symbol>
+</svg>
