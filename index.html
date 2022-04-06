@@ -9,8 +9,62 @@
   </head>
   <body>
     <div class="wrapper">
+      <p>Filters</p>
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 400 400"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <filter id="feQuasianBlur1" x="0%" y="0%">
+          <feGaussianBlur stdDeviation="1" />
+        </filter>
+        <filter id="feQuasianBlur10" x="0%" y="0%">
+          <feGaussianBlur stdDeviation="10" />
+        </filter>
+        <filter id="feQuasianBlur20" x="0%" y="0%">
+          <feGaussianBlur stdDeviation="20" />
+        </filter>
+        <filter id="feQuasianBlur100" x="0%" y="0%">
+          <feGaussianBlur stdDeviation="100" />
+        </filter>
+        <rect
+          x="0"
+          y="0"
+          width="100"
+          height="400"
+          fill="#466"
+          filter="url(#feQuasianBlur1)"
+        />
+        <rect
+          x="100"
+          y="0"
+          width="100"
+          height="400"
+          fill="#466"
+          filter="url(#feQuasianBlur10)"
+        />
+        <rect
+          x="200"
+          y="0"
+          width="100"
+          height="400"
+          fill="#466"
+          filter="url(#feQuasianBlur20)"
+        />
+        <rect
+          x="300"
+          y="0"
+          width="100"
+          height="400"
+          fill="#466"
+          filter="url(#feQuasianBlur100)"
+        />
+      </svg>
+    </div>
+    <div class="wrapper">
       <p>Mask</p>
-      <svg width="100" height="100%" viewBox="0 0 400 400">
+      <svg width="100%" height="100%" viewBox="0 0 400 400">
         <linearGradient id="maskGradient">
           <stop offset="10%" stop-color="#fff" />
           <stop offset="50%" stop-color="#425" />
