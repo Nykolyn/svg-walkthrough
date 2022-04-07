@@ -1,0 +1,14 @@
+{
+  "name": "svg",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "repository": "https://github.com/Nykolyn/svg-walkthrough.git",
+  "author": "nykolyn <nykolynandrii@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  }
+}

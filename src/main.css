@@ -11,14 +11,18 @@ body {
   flex-direction: column;
   padding: 10vw;
   min-height: 100vh;
+  background-color: rgb(150, 150, 150);
 }
 
 svg {
-  width: 400px;
-  height: 400px;
-  border: 1px solid black;
+  width: 800px;
+  height: 800px;
   margin-bottom: 20px;
   border-radius: 4px;
+}
+
+svg circle {
+  background-image: url(../assets/grapefruit-slice-332-332.jpeg);
 }
 
 .wrapper {
