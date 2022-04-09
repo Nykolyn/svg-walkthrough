@@ -4,24 +4,21 @@
 
 body {
   min-height: 100vh;
-  background-color: #969696;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 10vw;
+  padding: 10px;
   display: flex;
 }
 
 svg {
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
+  border: 1px solid #000;
   border-radius: 4px;
   margin-bottom: 20px;
-}
-
-svg circle {
-  background-image: url("grapefruit-slice-332-332.57f07eca.jpeg");
+  display: block;
 }
 
 .wrapper {

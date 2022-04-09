@@ -9,20 +9,17 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10vw;
   min-height: 100vh;
-  background-color: rgb(150, 150, 150);
+  padding: 10px;
 }
 
 svg {
-  width: 800px;
-  height: 800px;
+  width: 600px;
+  height: 600px;
+  display: block;
   margin-bottom: 20px;
   border-radius: 4px;
-}
-
-svg circle {
-  background-image: url(../assets/grapefruit-slice-332-332.jpeg);
+  border: 1px solid #000;
 }
 
 .wrapper {
