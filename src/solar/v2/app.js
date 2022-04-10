@@ -1,4 +1,4 @@
-import { config, SOLAR_SYSTEM_GROUP } from "./constants";
+import { config, SOLAR_SYSTEM_GROUP, STARS_SVG } from "./constants";
 import getOrbit from "./orbit";
 import { getPlanet, getPlanetFilter } from "./planet";
 import getStarField from "./starsField";
@@ -8,7 +8,7 @@ const draw = (markup) => {
   SOLAR_SYSTEM_GROUP.insertAdjacentHTML("beforeend", markup);
 };
 
-// draw(getStarField());
+STARS_SVG.insertAdjacentHTML("beforeend", getStarField());
 draw(getSun({ size: 40 }));
 config.forEach(({ size, distance, speed, color, name }) => {
   draw(getOrbit(distance));
