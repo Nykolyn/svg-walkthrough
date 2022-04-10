@@ -9,7 +9,13 @@ const COLORS = {
   GREY: "#ccc",
 };
 
-const drawPlanet = ({ size, distance }) =>
+const config = [
+  { size: 40, distance: 0 },
+  { size: 20, distance: 100 },
+  { size: 10, distance: 200 },
+];
+
+const getPlanet = ({ size, distance }) =>
   `
     <circle 
       cx="${COORD_WIDTH / 2 + distance}" 
@@ -19,7 +25,7 @@ const drawPlanet = ({ size, distance }) =>
     />
   `;
 
-const drawOrbit = (distance) =>
+const getOrbit = (distance) =>
   `
     <circle 
       cx="${COORD_WIDTH / 2}" 
@@ -34,6 +40,7 @@ const draw = (markup) => {
   SOLAR_SYSTEM_GROUP.insertAdjacentHTML("beforeend", markup);
 };
 
-console.log("draw");
-draw(drawOrbit(100));
-draw(drawPlanet({ size: 50, distance: 100 }));
+config.forEach(({ size, distance }) => {
+  draw(getOrbit(distance));
+  draw(getPlanet({ size, distance }));
+});
