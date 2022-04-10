@@ -1,7 +1,7 @@
 const svg = document.querySelector("svg.solar-system");
-console.log("svg", svg);
 
 const addPlanet = ({ r = 5, color = "black", dur = 2, id }) => {
+  console.log("will  add planet");
   const planet = `
   <circle r="${r}" fill="${color}">
     <animateMotion dur="${dur}s" rotate="auto" repeatCount="indefinite">
@@ -55,7 +55,7 @@ const config = [
   },
   { id: "pluto", orbit: { r: 180 }, planet: { r: 5, color: "black", dur: 25 } },
 ];
-
+console.log("config", config);
 config.forEach(({ id, orbit, planet }) => {
   addOrbit({ id, ...orbit });
   addPlanet({ id, ...planet });
