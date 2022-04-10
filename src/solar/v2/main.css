@@ -1,3 +1,9 @@
+
+:root {
+  --rotation-angle: 0deg;
+  --rotation-speed: 10s;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -19,4 +25,18 @@ svg {
   margin-bottom: 20px;
   border-radius: 4px;
   background-color: black;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(var(--rotation-angle));
+  }
+  to {
+    transform: rotate(calc(var(--rotation-angle) + 360deg));
+  }
+}
+
+.planet {
+  animation: orbit var(--rotation-speed) infinite linear;
+  transform-origin: 50% 50%;
 }
