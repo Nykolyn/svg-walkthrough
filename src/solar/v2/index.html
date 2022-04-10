@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Solar system</title>
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      class="solar-system"
+      viewBox="0 0 1000 1000"
+      role="img"
+      aria-labelledby="solarSystemTitle"
+      aria-describedby="solarSystemDescription"
+    >
+      <title id="solarSystemTitle">A procedurally generated solar system</title>
+      <desc id="solarSystemDescription">
+        A 2D rendering of a solar system, with planets orbiting a central star.
+      </desc>
+
+      <!-- This element will store our graphics -->
+      <g class="solar-system__group"></g>
+    </svg>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
